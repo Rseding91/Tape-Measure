@@ -1,0 +1,9 @@
+{
+  "name": "Tape Measure",
+  "version": "1.0.0",
+  "title": "Tape Measure",
+  "author": "Rseding91",
+  "homepage": "",
+  "dependencies": ["base"],
+  "description": "Measures distances between points and the player."
+}
