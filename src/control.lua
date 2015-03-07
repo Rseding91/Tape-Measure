@@ -159,8 +159,10 @@ function printDistance(event)
 				ySign = "+"
 			end
 			
-			player.print("Distance X: " .. xSign .. xDiff)
-			player.print("Distance Y: " .. ySign .. yDiff)
+			player.print("Total distance X: " .. xSign .. xDiff + 1)
+			player.print("Total distance Y: " .. ySign .. yDiff + 1)
+			player.print("Difference X: " .. xSign .. xDiff)
+			player.print("Difference Y: " .. ySign .. yDiff)
 			player.print("Start: " .. markerPosition.x .. "," .. markerPosition.y)
 			player.print("End: " .. endPosition.x .. "," .. endPosition.y)
 		end
