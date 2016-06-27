@@ -1,4 +1,3 @@
-require("defines")
   
 script.on_load(function()
   if global.tapes ~= nil then
@@ -14,7 +13,7 @@ script.on_event(defines.events.on_built_entity, function(event)
       addTapeToTicker(event.created_entity.position, event.player_index)
     end
     event.created_entity.destroy()
-    game.get_player(event.player_index).insert({name = "tape-measure", count = 1})
+    game.players[event.player_index].insert({name = "tape-measure", count = 1})
   end
 end)
 
@@ -160,7 +159,7 @@ end
 
 function addTapeToTicker(position, player_index)
   local newTape = {}
-  local player = game.get_player(player_index)
+  local player = game.players[player_index]
   local surface = player.surface
   local marker = surface.create_entity({position = position, name = "tape-measure-marker", force = player.force})
   
