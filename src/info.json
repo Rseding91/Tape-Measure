@@ -1,10 +1,10 @@
 {
   "name": "Tape Measure",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "title": "Tape Measure",
   "author": "Rseding91",
   "homepage": "",
   "dependencies": ["base"],
   "description": "Measures distances between points and the player.",
-  "factorio_version": "0.13"
+  "factorio_version": "0.14"
 }
